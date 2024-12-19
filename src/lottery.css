@@ -1,0 +1,28 @@
+*{
+    color: #2E2C2F;
+}
+.Instructions-div{
+    border: 3px solid #475b63;
+    border-radius: 20px;
+    font-size: small;
+    background-color: #2e2c2f;
+}
+.Instructions-div p{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+.Heading{
+    font-size: 28px;
+    padding: 0;
+    font-style: italic;
+    margin-top: 0;
+}
+
+.mainpage{
+    background-color: #f3e8ee;
+    border: 5px solid #2e2c2f;
+    border-radius: 20px;
+    width: 800px;
+    padding: 20px;
+}
