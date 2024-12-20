@@ -6,7 +6,7 @@ export default function Instructions () {
         <p className="Heading">Basic Rules</p>
         <ul>
             <p>1. You can buy unlimited Tickets.</p>
-            <p>2. If the sum of your Ticket Number is equals to 15, Then you won Lottery.</p>
+            <p>2. If all 3 digit numbers are same at all, Then you won Lottery.</p>
         </ul>
     </div>
         </>)
