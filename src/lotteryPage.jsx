@@ -11,21 +11,18 @@ export default function Lottery () {
     let RandomNumber = () => {
         let randomNumber = Math.floor(Math.random()*999)
         setRandom(randomNumber);
-
-        let sumOfNumber = randomNumber
-        .toString()
-        .split("")
-        .map(Number)
-        .reduce((curr, acc) => curr + acc, 0);
-
-        setsum(sumOfNumber);
     }
 
+  
+    let winningSit = (random) => {
+        let digits = random.toString().split("");
+        return digits.length === 3 && digits.every((digit) => digit === digits[0]);
+    };
 
     return (
         <div>
             <Instructions/>
-            <LotteryMsg sum={sum}/>
+            <LotteryMsg random={random} winningSit={winningSit}/>
             <LotteryTicket random={random} sum={sum} RandomNumber={RandomNumber}/> 
         </div>
     )
